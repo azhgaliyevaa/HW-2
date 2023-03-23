@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// Task 1
+
+// let country = 'Sweden';
+// let access;
+// if (country == 'Sweden') {
+// access = true;
+// } else{
+// access = false;
+// }
+
+let country = 'Sweden';
+let access = (country === "Sweden") ? true : false;
+ console.log(ac cess);
+
+// Task 2
+
+let num = 10;
+for(let i = 0; i < 10; i++){
+num++;
+}
+
+console.log(num);
+
+// Task 3
+
+for (let i = 0; i <= 8; i=i+2) {
+let userNumber = prompt("Введите число");
+
+if(Number(userNumber) === 10){
+    console.log("Равно 10");
+} else {
+    console.log("Не равно 10");
+}
+
+Number(userNumber) === 10
+? console.log("Равно 10")
+: console.log("Не равно 10");
+
+// Task 4
+
+const userAnswer = prompt("Введите число");
+for(let i=0; i < Number(userAnswer); i++) {
+    console.log(i**2);
+}
+
+// Task 5
+for (let i = 0; i<=100; i++) {
+if(i % 3 === 0 && i % 5 === 0) {
+console.log(i + ": FizzBuzz");
+} else if(i % 3 === 0) {
+    console.log(i + ": Fizz"); 
+} else if(i % 5 === 0) {
+console.log(i + ": Buzz");
+} else {
+    console.log(i + ": -------");
+}
+}
+
+// Task 6
+for (let i = 0; i < 3; i++) {
+    alert(`number ${i}!`);
+}
+
+let i = 0;
+while (i<3) {
+    alert(`number ${i}!`);
+    i++;
+}
+
+// Task 7 
+
+const initNumber = prompt("Введите начальное число: ");
+const finalNumber = prompt("Введите конечное число: ");
+
+function numberSquare(initNumber, finalNumber) {
+for(let i=initNumber; i < finalNumber; i++) {
+    console.log(i**2);
+}
+}
+
+numberSquare(initNumber, finalNumber);
+
+
+// Task 8
+function getRandomInteger(min, max) {
+return Math.floor(Math.random() * (max - min)) + min;
+}
+
+let r1 = getRandomInteger(0, 255);
+let r2 = getRandomInteger(0, 255);
+let r3 = getRandomInteger(0, 255);
+
+function getRandomRGB(red, green, blue) {
+    console.log(`rgb(${red}, ${green}, ${blue})`);
+}
+
+getRandomRGB(r1, r2, r3);
+
+// Task 9
+function showNumber(n) {
+    for(let i = 1; i < n; i = i + 0.5) {
+        if (Number.isInteger(i)) {
+    console.log(i + ": целое число");
+}
+else {
+    console.log(i + ": не целое число");
+}
+}
+}
+showNumber(3);
+
+    </script>
+</body>
+</html>
